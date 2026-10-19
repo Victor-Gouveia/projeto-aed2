@@ -4,7 +4,7 @@
 Victor de Alcantara Gouveia
 
 ## Vídeo
-https ://youtu.be/placeholder
+https://youtu.be/uXkwqetClAc
 
 ## Problema e pergunta
 O desenvolvimento de emuladores de videogames exige conhecimentos avançados de baixo nível (engenharia reversa, compiladores JIT e APIs gráficas como Vulkan/DirectX em C++). Olhar para os repositórios de forma isolada não revela como o conhecimento técnico circula entre diferentes comunidades. 
