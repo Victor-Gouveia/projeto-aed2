@@ -48,6 +48,10 @@ Todas as redes foram modeladas como **grafos não-dirigidos e ponderados**:
 ### 1. Pré-requisitos
 Instale as dependências necessárias em um ambiente Python 3:
 ```bash
+pip install requirements.txt
+```
+ou:
+```bash
 pip install networkx pandas numpy matplotlib requests
 ```
 
@@ -57,6 +61,8 @@ Os dados já tratados encontram-se na pasta `dataset/`. Caso deseje refazer a co
 export GITHUB_TOKEN="seu_token_do_github"
 python scraping.py
 ```
+Alternativamente, é possível alterar manualmente a chave de API no código.
+
 O script irá consultar a API, filtrar bots e contas inativas, e gerar os arquivos `emu_bipartite_edges.csv`, `emu_git_edges.csv`, `emu_git_target.csv` e `emu_git_features.json` dentro de `dataset/`.
 
 ### 3. Execução da Análise e Geração das Figuras
