@@ -38,15 +38,15 @@ Todas as redes foram modeladas como **grafos não-dirigidos e ponderados**:
 | semana | conceitos | onde aparece | para que serviu |
 | --- | --- | --- | --- |
 | **2** | **Tipos de grafo** (Não-dirigido e Ponderado), **Atributos de nós e arestas**, **Grau, Grau Médio e Densidade**, **Subredes** (`subgraph`) | `ProjetoAED2.ipynb`, cél. 2, 3, 4, 6 e 8 (`grafico_projetada_bruta.jpg`, `grafico_bipartida.jpg`, `grafico_devs-ponte.jpg`) | Modelar relações simétricas de co-atuação (`G`, `G_bruto`) e intensidade de contribuição (`B`), enriquecer nós com metadados de ecossistema/interação, comparar métricas estruturais (evidenciando o artefato de clique na projeção bruta) e isolar a subrede `G_pontes` ($w \ge 2$).
- |
+|
 | **3** | **Núcleo e Periferia**, **Efeito da amostragem / janela de coleta na estrutura** | `ProjetoAED2.ipynb`, cél. 3 (Seção 2.3) e análise de camadas (`graficos_kshell_camadas.png`) | Mapear a hierarquia topológica em `G_pontes` (separando colaboradores periféricos do núcleo coeso) e avaliar criticamente o impacto do limite de paginação da API do GitHub (10 páginas/endpoint) e dos filtros de ruído (`bots`, `< 5 stars`) na rede.
- |
+|
 | **4** | **Componentes e Pontes estruturais**, **Centralidade de Intermediação** (*Betweenness Centrality*), **Centralidade de Vetor Próprio** (*Eigenvector Centrality*) | `ProjetoAED2.ipynb`, cél. 3, 4 e seção de centralidades (`grafico_devs-ponte.jpg`, `grafico_centralidade.png`) | Identificar subcomunidades isoladas e o papel estrutural dos nós, contrastando desenvolvedores que atuam como pontes globais entre os ecossistemas PlayStation e Nintendo (`raphaelthegreat`, `oltolm`) com hubs locais do núcleo denso (`KAMiKAZOW`).
- |
+|
 | **5** | ***k-core*, *k-shell* e *Core Number***, ***Onion Layers*** (Descascamento por camadas) | `ProjetoAED2.ipynb`, seção de decomposição em núcleos (`graficos_kshell_camadas.png`) | Decompor `G_pontes` em cascas de conectividade ($k_{\max} = 101$) e refinar a ordem de descascamento interno (camadas 1 a 8), revelando a forte concentração da comunidade Nintendo nas camadas mais internas e densas.
- |
+|
 | **6** | **Redes Bipartidas e Projeção Unipartida**, **Co-ocorrência e Similaridade de Jaccard**, **Esqueleto por Limiar** (*Thresholding*) | `ProjetoAED2.ipynb`, cél. 2, 3, 4, 6 e 8 (`grafico_bipartida.jpg`, `grafico_devs-ponte.jpg`) | Modelar a afiliação direta Dev $\leftrightarrow$ Repo (`B`), projetar as redes unipartidas (`G_bruto` e `G_repos`), medir a afinidade proporcional entre emuladores corrigindo o viés de tamanho (Jaccard) e podar arestas fracas ($w \ge 2$ em `G_esqueleto`) para eliminar cliques artificiais.
- |
+|
 
 ## Como executar
 
