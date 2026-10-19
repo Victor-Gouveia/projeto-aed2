@@ -15,6 +15,9 @@ import json
 import pandas as pd
 import networkx as nx
 
+# conversão entre o display do notebook e print convencional
+display = print
+
 # 1. Configurando os caminhos dos arquivos gerados pelo scraping
 pasta_dados = "dataset"  # Ou "dados_emuladores", conforme a pasta gerada pelo script
 
