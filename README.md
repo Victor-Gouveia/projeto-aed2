@@ -48,7 +48,7 @@ Todas as redes foram modeladas como **grafos não-dirigidos e ponderados**:
 ### 1. Pré-requisitos
 Instale as dependências necessárias em um ambiente Python 3:
 ```bash
-pip install requirements.txt
+pip install -r requirements.txt
 ```
 ou:
 ```bash
